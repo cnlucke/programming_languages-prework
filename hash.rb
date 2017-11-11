@@ -1,4 +1,4 @@
-languages = {
+LANGUAGES = {
   :oo => {
     :ruby => {
       :type => "interpreted"
