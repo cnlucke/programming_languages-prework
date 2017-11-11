@@ -11,7 +11,7 @@ def reformat_languages(languages)
       puts "NEW_HASH2: #{new_hash}"
       puts
       puts "EXISTS: #{new_hash[name].key?(:style)}"
-      puts"new_hash[name][:style]: #{new_hash[name][:style]}"
+      #puts"new_hash[name][:style]: #{new_hash[name][:style]}"
       new_hash[name][:style] = [lang_style]
     end
   end
