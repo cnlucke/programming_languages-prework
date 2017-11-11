@@ -8,7 +8,7 @@ def reformat_languages(languages)
     puts
     language.each do |name, attributes|
       new_hash[name] = attributes
-      puts "new_hash[name]: #{new_hash[name]}"
+      puts "new_hash[#{name}]: #{new_hash[name]}"
       puts "KEY EXISTS? #{new_hash[name].key?(:style)}"
       puts
 
