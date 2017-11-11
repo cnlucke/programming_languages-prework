@@ -29,5 +29,3 @@ languages = {
 
   }
 }
-
-languages
