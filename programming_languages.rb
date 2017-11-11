@@ -4,7 +4,7 @@ def reformat_languages(languages)
 
   languages.each do |style, language|
     lang_style = style
-    puts "LANG_STYLE: " + lang_style
+    puts "LANG_STYLE: " + lang_style.to_s
     language.each do |name, attributes|
       puts
       puts name
