@@ -13,7 +13,7 @@ def reformat_languages(languages)
       if new_hash[name].key?(:style)
         new_hash[name][:style].push(lang_style)
       else
-        new_hash[name][:style] = lang_style
+        new_hash[name][:style] = [lang_style]
       end
     end
   end
