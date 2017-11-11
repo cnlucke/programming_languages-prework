@@ -13,7 +13,6 @@ def reformat_languages(languages)
       if new_hash[name].key?(:style)
         #if new_hash[name][:style].has_value?(lang_style)
           puts "STYLE: #{new_hash[name][:style]}"
-        end
       else
         new_hash[name][:style] = [lang_style]
       end
