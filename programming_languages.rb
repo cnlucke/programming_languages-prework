@@ -9,7 +9,7 @@ def reformat_languages(languages)
 
       attributes.each do |attribute_name, attrbiute_value|
 
-        if new_hash[name][:style] == []
+        if new_hash[name].key?(:style)
           new_hash[name][:style] = lang_style
         else
           new_hash[name][:style][lang_style] << lang_style
