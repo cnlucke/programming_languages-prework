@@ -16,6 +16,7 @@ def reformat_languages(languages)
           new_hash[name][:style] << lang_style
         end
       else
+        puts "ADDING STYLE TO #{name}"
         new_hash[name][:style] = [lang_style]
       end
       puts "EXISTS: #{new_hash[name].key?(:style)}"
