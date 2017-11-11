@@ -6,7 +6,6 @@ def reformat_languages(languages)
     lang_style = style
     puts "LANG_STYLE: " + lang_style.to_s
     language.each do |name, attributes|
-      puts "NEW_HASH: #{new_hash}"
       new_hash[name] = attributes
       puts "NEW_HASH2: #{new_hash}"
       puts
