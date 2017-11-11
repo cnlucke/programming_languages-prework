@@ -3,6 +3,7 @@ def reformat_languages(languages)
   lang_style = []
 
   languages.each do |style, language|
+    puts "STYLE: " + style.to_s
     lang_style = style
     language.each do |name, attributes|
       puts
