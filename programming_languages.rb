@@ -10,8 +10,10 @@ def reformat_languages(languages)
       puts attributes
       puts
       new_hash[name] = attributes
-      if new_hash[name][:style].value?(lang_style)
-        #If it exists, do nothing
+      if new_hash[name][:style].key?(:style)
+        if new_hash[name][:style].value?(lang_style)
+          #do nothing
+        end
       else
         new_hash[name][:style] = [lang_style]
       end
