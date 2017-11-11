@@ -11,7 +11,7 @@ def reformat_languages(languages)
       puts
       new_hash[name] = attributes
       if new_hash[name].key?(:style)
-        if !new_hash[name][:style].include? lang_style
+        if !(new_hash[name][:style].include?(lang_style))
           new_hash[name][:style] << lang_style
         end
       else
